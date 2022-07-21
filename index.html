@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9ca08a6a82.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body class="bg-[#232946]">
+    <!-- header -->
+    <header
+      class="w-full h-[60px] fixed items-center top-0 left-0 z-10 py-3 bg-[#232946]"
+    >
+      <div class="w-full max-w-7xl mx-auto flex justify-between items-center">
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-10 w-10 text-white"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+        <!-- toggle button -->
+        <div></div>
+        <nav>
+          <ul class="flex items-center gap-6">
+            <li>
+              <a href="#about" class="text-[#b8c1ec] text-lg hover:text-white"
+                ><span class="text-amber-300">01.</span> About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#projects"
+                class="text-[#b8c1ec] text-lg hover:text-white"
+                ><span class="text-amber-300">02.</span> Projects</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-[#b8c1ec] text-lg hover:text-white"
+                ><span class="text-amber-300">03.</span> Blog</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-[#b8c1ec] text-lg hover:text-white"
+                ><span class="text-amber-300">04.</span> Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- hero section -->
+    <section class="w-full h-screen">
+      <div class="w-full h-screen max-w-7xl mx-auto flex py-8 px-10">
+        <div class="flex flex-col justify-end pb-10 lg:pb-19 xl:pb-23">
+          <h1
+            class="text-xs md:text-4xl lg:text-6xl mb-6 py-2 text-[#b8c1ec] font-bold"
+          >
+            Hello!,I'm Abdulaziz
+          </h1>
+
+          <p class="text-5xl py-4 leading-normal text-[#fffffe] font-semibold">
+            <span class="font-bold">Frontend</span> Engineer.
+          </p>
+          <p class="text-xl py-4 leading-loose text-[#b8c1ec] font-semibold">
+            I love combining the worlds of logic and creative design to make
+            eye-catching, <br />accessible, and user-friendly websites and
+            applications
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="w-full" id="about">
+      <div class="w-full max-w-7xl mx-auto pt-32 px-10">
+        <h2 class="text-5xl text-[#fffffe] font-semibold pb-10">
+          <span class="text-amber-300">01.</span> About Me ....
+        </h2>
+      </div>
+      <div class="w-full max-w-7xl mx-auto flex pt-14 h-[600px] gap-8 px-10">
+        <div class="w-1/2 h-full pr-5 pl-4">
+          <h2 class="text-xl font-semibold text-[#fffffe] leading-loose">
+            I’m Abdulaziz Sadi, Frontend & passionate UI/UX Designer currently
+            living in Dar es Salaam, Tanzania.
+          </h2>
+          <p class="text-[#b8c1ec] mt-4 leading-loose py-6 text-justify">
+            Building creative tech solutions is my biggest passion, and coding
+            has been a life-long hobby for me. I became obsessed with the coding
+            when I was asked to rebuild a school website where I worked as a ICT
+            teacher, from there I spent most of my time after work building
+            projects as a self-taught developer. Since then, I decided to pursue
+            web development skills from online bootcamps as self-taught, where I
+            completed the Web Development Immersive.
+          </p>
+        </div>
+        <div class="w-1/2 h-[450px] object-cover px-14 relative">
+          <img
+            src="./img/pict.jpeg"
+            alt=""
+            class="w-[400px] h-full rounded-lg"
+          />
+          <div
+            class="absolute top-0 bottom-0 right-0 left-0 bg-[#232946] opacity-40 hover:bg-[#232946] hover:opacity-0 transition-500"
+          ></div>
+        </div>
+      </div>
+      <div class="w-full max-w-7xl mx-auto flex px-10 pb-5 gap-8">
+        <div class="w-1/2 bg-[#fffffe] pt-8 pl-4 rounded-lg">
+          <h3 class="text-3xl font-semibold text-slate-900">
+            Technical Skills
+          </h3>
+          <!-- skills -->
+          <div class="flex gap-3 p-2 mt-4">
+            <div class="flex gap-1 items-center">
+              <div class="w-8">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 text-amber-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+              <div class="w-56 p-2">
+                <h3 class="text-sm font-semibold">Programming Languages</h3>
+                <p class="text-[13px] leading-loose mt-2">
+                  JavaScript (ES6+), TypeScript, HTML5, CSS, PHP
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-1 items-center">
+              <div class="w-8">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 text-amber-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+              </div>
+              <div class="w-56">
+                <h3 class="text-sm font-semibold">Frameworks & libraries</h3>
+                <p class="text-[13px] leading-loose mt-2">
+                  React, Nextjs, Tailwindcss, Bootstrap, Node, Express, SASS,
+                  AlpineJs, RESTFul APIs, Redux, Laravel
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Skills -->
+          <div class="flex items-center gap-3 p-2 mt-4">
+            <div class="flex gap-1 items-center">
+              <div class="w-8">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 text-amber-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
+                  />
+                </svg>
+              </div>
+              <div class="w-56 p-2">
+                <h3 class="text-sm font-semibold">Technologies</h3>
+                <p class="text-[13px] leading-loose mt-2">
+                  GitHub, Netlify, MongoDB, SQL, Gatsby
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-1 items-center">
+              <div class="w-8">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 text-amber-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
+                  />
+                </svg>
+              </div>
+              <div class="w-56">
+                <h3 class="text-sm font-semibold">Programs & tools</h3>
+                <p class="text-[13px] leading-loose mt-2">
+                  VS Code, Postman, Figma, AdobeXD, Illustrator, WordPress
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-1/2 px-14 text-[#fffffe] pt-8">
+          <p class="flex items-center gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 text-amber-300"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"
+              />
+            </svg>
+
+            <span class="text-[#fffffe] text-2xl">Past Experience</span>
+          </p>
+          <p class="text-[#b8c1ec] mt-4">
+            Want to know more about my education and experience ?
+          </p>
+          <a href="#" class="">
+            <button
+              class="rounded border-2 border-amber-300 font-semibold px-16 py-3 text-[#b8c1ec] mt-6 bg-[#232946] hover:bg-[#232946]/20 hover:text-[#b8c1ec] hover:border-amber-300 transition-500"
+            >
+              My Resume
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- PROJECTS -->
+    <section class="w-full h-screen" id="projects">
+      <div class="w-full max-w-7xl mx-auto px-10 pt-32">
+        <h2 class="text-5xl text-[#fffffe] font-semibold pb-10">
+          <span class="text-amber-300">02.</span> Recent Projects ....
+        </h2>
+      </div>
+      <!-- Project -->
+      <div
+        class="w-full max-w-7xl mx-auto flex flex-col items-center pt-14 px-10"
+      >
+        <!-- Projects card -->
+        <div class="flex w-full py-8 my-8">
+          <div class="w-1/2">
+            <img src="./img/softify.png" alt="" />
+          </div>
+          <div class="w-1/2 pl-8">
+            <p class="text-amber-300 text-right px-6">Personal Project</p>
+            <p
+              class="text-[#fffffe] text-right text-lg font-semibold my-3 px-6"
+            >
+              Softfy Inc, landing page
+            </p>
+            <div class="py-6 px-4 w-full">
+              <p class="text-[#b8c1ec] text-text-right">
+                A sample project for a fiction startup company called softfyIn.
+                The company would show case the products and services to attract
+                more customers in education industry. It is responsive website.
+              </p>
+            </div>
+            <div class="p-4">
+              <ul class="flex items-center justify-end gap-6">
+                <li class="text-xs text-slate-300">HTML</li>
+                <li class="text-xs text-slate-300">CSS</li>
+                <li class="text-xs text-slate-300">Tailwindcss</li>
+                <li class="text-xs text-slate-300">JavaScript</li>
+                <li class="text-xs text-slate-300">Netlify</li>
+              </ul>
+            </div>
+            <div class="p-4">
+              <ul class="flex items-center justify-end gap-6">
+                <li>
+                  <a
+                    href="https://github.com/kitindi/softfy-startup-landingpage"
+                    target="_blank"
+                  >
+                    <i
+                      class="fa-brands fa-github text-slate-400 text-lg hover:text-amber-400"
+                    >
+                    </i
+                  ></a>
+                </li>
+                <li class="">
+                  <a
+                    href="https://softfyinc.netlify.app/"
+                    target="_blank"
+                    class=""
+                  >
+                    <i
+                      class="fa-solid fa-link text-slate-400 text-lg hover:text-amber-400"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Project card -->
+        <div class="flex w-full py-8 my-8">
+          <div class="w-1/2">
+            <p class="text-amber-300 text-left">Personal Project</p>
+            <p class="text-[#fffffe] text-left text-lg font-semibold my-3">
+              Bongo Booking, Booking website landing page
+            </p>
+            <div class="py-6 w-full">
+              <p class="text-[#b8c1ec] text-left">
+                A web application that enables prospect customers to filter and
+                book for hotel and othet accomodation styles.
+              </p>
+            </div>
+            <div class="p-4">
+              <ul class="flex items-center justify-start gap-6">
+                <li class="text-xs text-slate-300">React</li>
+                <li class="text-xs text-slate-300">CSS3</li>
+                <li class="text-xs text-slate-300">API</li>
+                <li class="text-xs text-slate-300">Netlify</li>
+              </ul>
+            </div>
+            <div class="p-4">
+              <ul class="flex items-center justify-start gap-6">
+                <li>
+                  <a
+                    href="https://github.com/kitindi/darbooking"
+                    target="_blank"
+                  >
+                    <i
+                      class="fa-brands fa-github text-slate-400 text-lg hover:text-amber-400"
+                    >
+                    </i
+                  ></a>
+                </li>
+                <li class="">
+                  <a
+                    href="https://bongobooking.netlify.app/"
+                    target="_blank"
+                    class=""
+                  >
+                    <i
+                      class="fa-solid fa-link text-slate-400 text-lg hover:text-amber-400"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-1/2">
+            <img src="./img/booking.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- JavaScript -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
