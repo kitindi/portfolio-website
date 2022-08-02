@@ -19,6 +19,10 @@
       body {
         font-family: "Poppins", sans-serif;
       }
+
+      html {
+        scroll-behavior: smooth;
+      }
     </style>
     <title>Document</title>
   </head>
@@ -28,23 +32,42 @@
       class="w-full h-[60px] fixed items-center top-0 left-0 z-10 py-3 bg-[#232946]"
     >
       <div class="w-full max-w-7xl mx-auto flex justify-between items-center">
-        <div>
+        <!-- logo -->
+        <div class="flex items-center gap-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-10 w-10 text-white"
-            viewBox="0 0 20 20"
-            fill="currentColor"
+            class="h-12 w-12 text-amber-400"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
           >
             <path
-              fill-rule="evenodd"
-              d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z"
-              clip-rule="evenodd"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13 10V3L4 14h7v7l9-11h-7z"
+            />
+          </svg>
+          <span class="text-white text-2xl font-semibold">Sadi</span>
+        </div>
+        <!-- toggle button -->
+        <div class="md:hidden pr-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8 text-white cursor-pointer"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h7"
             />
           </svg>
         </div>
-        <!-- toggle button -->
-        <div></div>
-        <nav>
+        <nav class="hidden md:block">
           <ul class="flex items-center gap-6">
             <li>
               <a href="#about" class="text-[#b8c1ec] text-lg hover:text-white"
@@ -71,71 +94,130 @@
           </ul>
         </nav>
       </div>
+      <!-- mobile nav -->
+      <div
+        class="w-full max-w-7xl md:hidden bg-[#232946] h-screen px-4 ml-[-100%]"
+      >
+        <nav class="py-10">
+          <ul class="flex flex-col gap-6">
+            <li class="py-3 block">
+              <a href="#about" class="text-[#b8c1ec] text-lg hover:text-white"
+                ><span class="text-amber-300">01.</span> About</a
+              >
+            </li>
+            <li class="py-2">
+              <a
+                href="#projects"
+                class="text-[#b8c1ec] text-lg hover:text-white"
+                ><span class="text-amber-300">02.</span> Projects</a
+              >
+            </li>
+            <li class="py-2">
+              <a href="" class="text-[#b8c1ec] text-lg hover:text-white"
+                ><span class="text-amber-300">03.</span> Blog</a
+              >
+            </li>
+            <li class="py-2">
+              <a href="" class="text-[#b8c1ec] text-lg hover:text-white"
+                ><span class="text-amber-300">04.</span> Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- hero section -->
-    <section class="w-full h-screen">
+    <section class="w-full md:h-screen">
       <div class="w-full h-screen max-w-7xl mx-auto flex py-8 px-10">
-        <div class="flex flex-col justify-end pb-10 lg:pb-19 xl:pb-23">
+        <div class="flex flex-col justify-end pb-16 lg:pb-19 xl:pb-23">
           <h1
-            class="text-xs md:text-4xl lg:text-6xl mb-6 py-2 text-[#b8c1ec] font-bold"
+            class="text-3xl md:text-4xl lg:text-6xl mb-3 md:mb-6 py-2 text-[#b8c1ec] font-bold"
           >
             Hello!,I'm Abdulaziz
           </h1>
 
-          <p class="text-5xl py-4 leading-normal text-[#fffffe] font-semibold">
-            <span class="font-bold">Frontend</span> Engineer.
+          <p
+            class="text-2xl md:text-5xl py-4 leading-normal text-[#fffffe] font-semibold"
+          >
+            Frontend Developer.
           </p>
-          <p class="text-xl py-4 leading-loose text-[#b8c1ec] font-semibold">
+          <!-- <p
+            class="text-sm md:text-xl py-4 leading-loose text-[#b8c1ec] font-semibold"
+          >
             I love combining the worlds of logic and creative design to make
-            eye-catching, <br />accessible, and user-friendly websites and
+            eye-catching, accessible, and user-friendly websites and
             applications
+          </p> -->
+          <p
+            class="text-lg md:text-2xl py-4 leading-loose text-[#b8c1ec] font-semibold md:mb-3 mb-2"
+          >
+            Nice to meet you, I am that kind of developer you were patiently
+            looking for.
           </p>
+          <a href="#about">
+            <button
+              class="bg-amber-400 px-8 md:px-12 md:py-4 py-2 rounded text-white font-semibold md:text-lg"
+            >
+              Find Out Why !
+            </button>
+          </a>
         </div>
       </div>
     </section>
     <section class="w-full" id="about">
-      <div class="w-full max-w-7xl mx-auto pt-32 px-10">
-        <h2 class="text-5xl text-[#fffffe] font-semibold pb-10">
+      <div class="w-full max-w-7xl mx-auto pt-20 md:pt-32 px-10">
+        <h2 class="text-3xl md:text-5xl text-[#fffffe] font-semibold pb-10">
           <span class="text-amber-300">01.</span> About Me ....
         </h2>
       </div>
-      <div class="w-full max-w-7xl mx-auto flex pt-14 h-[600px] gap-8 px-10">
-        <div class="w-1/2 h-full pr-5 pl-4">
-          <h2 class="text-xl font-semibold text-[#fffffe] leading-loose">
+      <div
+        class="w-full max-w-7xl mx-auto flex flex-col md:flex-row md:pt-14 h-[600px] gap-8 px-10"
+      >
+        <div class="w-full md:w-1/2 h-full pr-5 pl-4">
+          <h2
+            class="text-lg md:text-xl font-semibold text-[#fffffe] leading-loose"
+          >
             I’m Abdulaziz Sadi, Frontend & passionate UI/UX Designer currently
             living in Dar es Salaam, Tanzania.
           </h2>
-          <p class="text-[#b8c1ec] mt-4 leading-loose py-6 text-justify">
+          <p
+            class="text-sm md:text-lg text-[#b8c1ec] mt-2 md:mt-4 leading-loose py-6 text-justify"
+          >
             Building creative tech solutions is my biggest passion, and coding
-            has been a life-long hobby for me. I became obsessed with the coding
+            has become a life hobby for me. I became obsessed with the coding
             when I was asked to rebuild a school website where I worked as a ICT
-            teacher, from there I spent most of my time after work building
-            projects as a self-taught developer. Since then, I decided to pursue
-            web development skills from online bootcamps as self-taught, where I
-            completed the Web Development Immersive.
+            teacher, from there I spent most of my time after work, learning
+            programming skills and building projects. Since then, I decided to
+            pursue a career as a web developer focussed on frontend technologies
+            as self-taught. I am now exploring backend technologies such as
+            Nodejs, express and mongoDB so I can build fullstack applications.
           </p>
         </div>
-        <div class="w-1/2 h-[450px] object-cover px-14 relative">
+        <div
+          class="hidden md:block md:w-1/2 h-[450px] object-cover px-14 relative"
+        >
           <img
             src="./img/pict.jpeg"
             alt=""
-            class="w-[400px] h-full rounded-lg"
+            class="w-[350px] md:w-[400px] h-full rounded-lg"
           />
           <div
             class="absolute top-0 bottom-0 right-0 left-0 bg-[#232946] opacity-40 hover:bg-[#232946] hover:opacity-0 transition-500"
           ></div>
         </div>
       </div>
-      <div class="w-full max-w-7xl mx-auto flex px-10 pb-5 gap-8">
-        <div class="w-1/2 bg-[#fffffe] pt-8 pl-4 rounded-lg">
+      <div
+        class="w-full max-w-7xl mx-auto flex flex-col md:flex-row px-10 pb-5 gap-8"
+      >
+        <div class="w-full md:w-1/2 bg-[#fffffe] pt-8 pl-4 rounded-lg">
           <h3 class="text-3xl font-semibold text-slate-900">
             Technical Skills
           </h3>
           <!-- skills -->
-          <div class="flex gap-3 p-2 mt-4">
-            <div class="flex gap-1 items-center">
-              <div class="w-8">
+          <div class="flex flex-col md:flex-row gap-3 p-2 mt-4">
+            <div class="flex flex-col md:flex-row gap-1 md:items-center">
+              <div class="w-full md:w-8">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6 text-amber-400"
@@ -151,15 +233,15 @@
                   />
                 </svg>
               </div>
-              <div class="w-56 p-2">
+              <div class="w-full md:w-56 p-2">
                 <h3 class="text-sm font-semibold">Programming Languages</h3>
                 <p class="text-[13px] leading-loose mt-2">
                   JavaScript (ES6+), TypeScript, HTML5, CSS
                 </p>
               </div>
             </div>
-            <div class="flex gap-1 items-center">
-              <div class="w-8">
+            <div class="flex flex-col md:flex-row gap-1 items-center">
+              <div class="w-full md:w-8">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6 text-amber-400"
@@ -180,7 +262,7 @@
                   />
                 </svg>
               </div>
-              <div class="w-56">
+              <div class="w-full md:w-56">
                 <h3 class="text-sm font-semibold">Frameworks & libraries</h3>
                 <p class="text-[13px] leading-loose mt-2">
                   React, Nextjs, Tailwindcss, Bootstrap, Express, SASS,
@@ -190,9 +272,9 @@
             </div>
           </div>
           <!-- Skills -->
-          <div class="flex items-center gap-3 p-2 mt-4">
-            <div class="flex gap-1 items-center">
-              <div class="w-8">
+          <div class="flex flex-col md:flex-row md:items-center gap-3 p-2 mt-4">
+            <div class="flex flex-col md:flex-row gap-1 items-center">
+              <div class="w-full md:w-8">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6 text-amber-400"
@@ -208,15 +290,15 @@
                   />
                 </svg>
               </div>
-              <div class="w-56 p-2">
+              <div class="w-full md:w-56 p-2">
                 <h3 class="text-sm font-semibold">Technologies</h3>
                 <p class="text-[13px] leading-loose mt-2">
                   Git, GitHub, Netlify, MongoDB, SQL, Gatsby, Nodejs
                 </p>
               </div>
             </div>
-            <div class="flex gap-1 items-center">
-              <div class="w-8">
+            <div class="flex flex-col md:flex-row gap-1 items-center">
+              <div class="w-full md:w-8">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6 text-amber-400"
@@ -232,7 +314,7 @@
                   />
                 </svg>
               </div>
-              <div class="w-56">
+              <div class="w-full md:w-56">
                 <h3 class="text-sm font-semibold">Programs & tools</h3>
                 <p class="text-[13px] leading-loose mt-2">
                   VS Code, Postman, Figma, AdobeXD, Illustrator,
@@ -242,7 +324,7 @@
           </div>
         </div>
 
-        <div class="w-1/2 px-14 text-[#fffffe] pt-8">
+        <div class="w-full md:w-1/2 px-14 text-[#fffffe] pt-8">
           <p class="flex items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
