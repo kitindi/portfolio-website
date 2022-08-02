@@ -51,7 +51,7 @@
           <span class="text-white text-2xl font-semibold">Sadi</span>
         </div>
         <!-- toggle button -->
-        <div class="md:hidden pr-4">
+        <div class="md:hidden pr-4" onclick="toggleMenu(this)">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-8 w-8 text-white cursor-pointer"
@@ -96,29 +96,39 @@
       </div>
       <!-- mobile nav -->
       <div
-        class="w-full max-w-7xl md:hidden bg-[#232946] h-screen px-4 ml-[-100%]"
+        class="mobile-menu hidden w-full max-w-7xl md:hidden bg-[#232946] h-screen px-4"
       >
         <nav class="py-10">
           <ul class="flex flex-col gap-6">
             <li class="py-3 block">
-              <a href="#about" class="text-[#b8c1ec] text-lg hover:text-white"
+              <a
+                href="#about"
+                onclick="toggleMobileMenu(this)"
+                class="text-[#b8c1ec] text-lg hover:text-white"
                 ><span class="text-amber-300">01.</span> About</a
               >
             </li>
             <li class="py-2">
               <a
+                onclick="toggleMobileMenu(this)"
                 href="#projects"
                 class="text-[#b8c1ec] text-lg hover:text-white"
                 ><span class="text-amber-300">02.</span> Projects</a
               >
             </li>
             <li class="py-2">
-              <a href="" class="text-[#b8c1ec] text-lg hover:text-white"
+              <a
+                href=""
+                onclick="toggleMobileMenu(this)"
+                class="text-[#b8c1ec] text-lg hover:text-white"
                 ><span class="text-amber-300">03.</span> Blog</a
               >
             </li>
             <li class="py-2">
-              <a href="" class="text-[#b8c1ec] text-lg hover:text-white"
+              <a
+                href=""
+                onclick="toggleMobileMenu(this)"
+                class="text-[#b8c1ec] text-lg hover:text-white"
                 ><span class="text-amber-300">04.</span> Contact</a
               >
             </li>
