@@ -220,7 +220,7 @@
         </div>
       </div>
       <div
-        class="w-full max-w-7xl mx-auto flex flex-col md:flex-row px-6 pb-5 gap-8"
+        class="w-full max-w-7xl mx-auto flex flex-col md:flex-row px-6 py-5 gap-8"
       >
         <div class="w-full md:w-1/2 bg-[#fffffe] pt-8 pl-4 rounded-lg">
           <h3 class="text-lg md:text-3xl font-semibold text-slate-900">
@@ -370,32 +370,45 @@
     </section>
     <!-- PROJECTS -->
     <section class="w-full h-screen" id="projects">
-      <div class="w-full max-w-7xl mx-auto px-6 pt-32">
-        <h2 class="text-5xl text-[#fffffe] font-semibold pb-10">
+      <div class="w-full max-w-7xl mx-auto px-6 pt-24 md:pt-28">
+        <h2 class="text-3xl md:text-5xl text-[#fffffe] font-semibold mb-2">
           <span class="text-amber-300">02.</span> Recent Projects ....
         </h2>
       </div>
       <!-- Project -->
       <div
-        class="w-full max-w-7xl mx-auto flex flex-col items-center pt-14 px-6"
+        class="w-full max-w-7xl mx-auto flex flex-col items-center pt-3 md:pt-14 px-6"
       >
         <!-- Projects card -->
-        <div class="flex w-full py-8 my-8">
-          <div class="w-1/2">
-            <img src="./img/softify.png" alt="" />
-          </div>
-          <div class="w-1/2 pl-8">
-            <p class="text-amber-300 text-right px-6">Personal Project</p>
+        <div class="flex flex-col md:flex-row w-full py-8 my-4">
+          <div class="w-full md:w-1/2">
+            <p class="text-amber-300 text-right px-6 md:hidden">
+              Personal Project
+            </p>
             <p
-              class="text-[#fffffe] text-right text-lg font-semibold my-3 px-6"
+              class="text-[#fffffe] text-right text-lg font-semibold my-3 px-6 md:hidden"
+            >
+              Softfy Inc, landing page
+            </p>
+            <img src="./img/softify.png" alt="" class="w-full" />
+          </div>
+          <div class="w-full md:w-1/2 md:pl-8">
+            <p class="hidden text-amber-300 text-right px-6 md:block">
+              Personal Project
+            </p>
+            <p
+              class="hidden text-[#fffffe] text-right text-lg font-semibold my-3 px-6 md:block"
             >
               Softfy Inc, landing page
             </p>
             <div class="py-6 px-4 w-full">
               <p class="text-[#b8c1ec] text-text-right">
                 A sample project for a fiction startup company called softfyIn.
-                The company would show case the products and services to attract
-                more customers in education industry. It is responsive website.
+                The company focus on education technlogy , so the website is one
+                of their markting tool for their products and services as well
+                as expanding their reach to their potential customers accross a
+                region or world wide. more customers in education industry. It
+                is built with responsiveness and seo in mind.
               </p>
             </div>
             <div class="p-4">
@@ -436,10 +449,14 @@
           </div>
         </div>
         <!-- Project card -->
-        <div class="flex w-full py-8 my-8">
-          <div class="w-1/2">
-            <p class="text-amber-300 text-left">Personal Project</p>
-            <p class="text-[#fffffe] text-left text-lg font-semibold my-3">
+        <div class="flex flex-col-reverse md:flex-row w-full py-8 mb-4">
+          <div class="w-full md:w-1/2">
+            <p class="hidden md:block text-amber-300 text-left">
+              Personal Project
+            </p>
+            <p
+              class="hidden md:block text-[#fffffe] text-left text-lg font-semibold my-3"
+            >
               Bongo Booking, Booking website landing page
             </p>
             <div class="py-6 w-full">
@@ -483,8 +500,14 @@
               </ul>
             </div>
           </div>
-          <div class="w-1/2">
-            <img src="./img/booking.png" alt="" />
+          <div class="w-full md:w-1/2">
+            <p class="md:hiddedn text-amber-300 text-left">Personal Project</p>
+            <p
+              class="md:hiddedn text-[#fffffe] text-left text-lg font-semibold my-3 mb-3 md:mb-0"
+            >
+              Bongo Booking, Booking website landing page
+            </p>
+            <img src="./img/booking.png" alt="" class="w-full mt-3" />
           </div>
         </div>
       </div>
